@@ -1,0 +1,17 @@
+{
+  "bundleDependencies": false,
+  "dependencies": {
+    "ws": "^8.3.0"
+  },
+  "deprecated": false,
+  "description": "Event Handler | By creating advanced giveaways with Award, you can improve your social media accounts and gain organic lift!",
+  "keywords": [
+    "award",
+    "api",
+    "events"
+  ],
+  "license": "Apache-2.0",
+  "main": "Award.js",
+  "name": "award.js",
+  "version": "1.0.1"
+}
