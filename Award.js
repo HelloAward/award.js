@@ -4,7 +4,7 @@ const WebSocket = require("ws");
 module.exports = class Award extends EventEmitter {
 	constructor(options = {}) {
 		super();
-		this.ws = new WebSocket("wss://api.awardbot.me/v1/gateway?i=" + JSON.stringify(options.intents) + (options.guild ? ("&g=" + options.guild) : ""));
+		this.ws = new WebSocket("wss://awardbot-demo.herokuapp.com/v1/gateway?i=" + JSON.stringify(options.intents) + (options.guild ? ("&g=" + options.guild) : ""));
 
 		this.ws.on("message", msg => {
 			const message = JSON.parse(msg.toString());
